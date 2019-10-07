@@ -1,0 +1,71 @@
+
+<body>
+	<h3>GET API Service</h3>
+<table datatable class="table row-border hover">
+	<tr>
+		<th>userId</th>
+		<th>Id</th>
+		<th>Title</th>
+		<th>Completed</th>
+	</tr>
+	<tr *ngFor='let item of todolist'>
+		<td>{{item.userId}}</td>
+		<td>{{item.id}}</td>
+		<td>{{item.title}}</td>
+		<td>{{item.completed}}</td>
+	</tr>
+</table>
+
+<h3>GET By Parameter Service</h3>
+<table datatable class="table row-border hover">
+	<tr>
+		<th>userId</th>
+		<th>Id</th>
+		<th>Title</th>
+		<th>Completed</th>
+	</tr>
+	<tr *ngFor='let item of todobyparam'>
+		<td>{{item.userId}}</td>
+		<td>{{item.id}}</td>
+		<td>{{item.title}}</td>
+		<td>{{item.completed}}</td>
+	</tr>
+</table>
+
+<h3>POST By Parameter Service</h3>
+<table datatable class="table row-border hover">
+	<tr>
+		<th>userId</th>
+		<th>Id</th>
+		<th>Title</th>
+		<th>Completed</th>
+	</tr>
+	<tr>
+		<td>{{todopost.userId}}</td>
+		<td>{{todopost.id}}</td>
+		<td>{{todopost.title}}</td>
+		<td>{{todopost.completed}}</td>
+	</tr>
+</table>
+
+<h3>PUT By Parameter Service</h3>
+<table datatable class="table row-border hover">
+	<tr>
+		<th>userId</th>
+		<th>Id</th>
+		<th>Title</th>
+		<th>Completed</th>
+	</tr>
+	<tr>
+		<td>{{todoput.userId}}</td>
+		<td>{{todoput.id}}</td>
+		<td>{{todoput.title}}</td>
+		<td>{{todoput.completed}}</td>
+	</tr>
+</table>
+<!-- <p>{{todopost.id}}
+	{{todopost.userId}}
+	{{todopost.title}}
+	{{todopost.completed}}
+</p> -->
+
